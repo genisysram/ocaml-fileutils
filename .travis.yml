@@ -28,3 +28,21 @@ matrix:
       cache:
         directories:
           - $HOME/Library/Caches/Homebrew
+          
+# adding code to work on power systems
+    - os:
+        - linux
+      arch: ppc64le
+      env:
+        - OCAML_VERSION=4.08
+
+    - os:
+        - linux
+      arch: ppc64le
+      env:
+        # Use an old version for backward compatibility.
+        - OCAML_VERSION=4.05
+          
+          
+     
+     
